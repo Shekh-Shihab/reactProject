@@ -1,0 +1,30 @@
+.container {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background-color: #9dddbb;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+}

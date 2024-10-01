@@ -1,0 +1,10 @@
+.cart-item {
+  width: auto;
+  margin-left: 15px;
+}
+.cart-price h3 {
+  background-color: #4caf50;
+  width: auto;
+  padding: 5px;
+  color: white;
+}

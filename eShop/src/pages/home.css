@@ -1,0 +1,104 @@
+button {
+  border: none;
+  padding: 10px 20px;
+  height: 40px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  font-size: medium;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: #93c995;
+  border: 2px solid #4caf50;
+}
+
+#product-list {
+  text-align: center;
+}
+
+#product-list h2 {
+  background-color: #4caf50;
+  padding: 5px;
+  color: white;
+}
+
+#product-list-items {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: center; /* Center the items */
+  margin: 0 auto; /* Center the list */
+  padding: 0; /* Remove default padding */
+}
+
+h1 {
+  color: #4caf50;
+  text-align: center;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: auto;
+  color: black;
+}
+
+#product-list-items li {
+  list-style: none;
+  padding: 10px;
+  margin: 10px; /* Add margin between items */
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  flex: 1 1 200px; /* Allow items to grow/shrink, with a minimum width */
+  max-width: 250px; /* Set a maximum width for each item */
+}
+
+#product-list-items li img {
+  height: 200px;
+  width: 100%; /* Make image responsive */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.align-content-center {
+  margin-bottom: 50px;
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.align-content-center img {
+  height: 300px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  #product-list-items li {
+    flex: 1 1 150px; /* Smaller items on smaller screens */
+  }
+
+  h1 {
+    font-size: 24px; /* Adjust heading size */
+  }
+}
+
+@media (max-width: 480px) {
+  #product-list-items li {
+    flex: 1 1 100%; /* Full-width items on very small screens */
+  }
+
+  h1 {
+    font-size: 20px; /* Adjust heading size */
+  }
+
+  button {
+    width: 100%; /* Full-width buttons */
+  }
+}
